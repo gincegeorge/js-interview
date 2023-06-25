@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>2nd Challenge</title>
+  </head>
+  <body>
+    <h1>2nd challenge</h1>
+    <p>Current Epoch on Server: {{epochTime}}</p>
+    <p id="localTime">Local time: <span id="time"></span></p>
+  </body>
+
+  <script>
+    const now = new Date();
+    const localTime = now.toLocaleTimeString();
+    const timeElement = document.getElementById("time");
+    timeElement.innerHTML = localTime;
+  </script>
+</html>
